@@ -1,58 +1,35 @@
-import React from 'react'
-import Header from '../Components/Header'
-import MovieSwiper from '../Components/MovieSwiper'
+import React from "react";
+import ReactPlayer from "react-player";
+// import useEmblaCarousel from "embla-carousel-react";
 
-import Video1 from '../videos/video1.mp4'
-import Image01 from '../images/image-2.jpg'
+import Header from "../Components/Header";
+import MovieSwiper from "../Components/MovieSwiper";
 
-import './Home.css'
-import ReactPlayer from 'react-player'
+import Video1 from "../videos/mother-in-law-the-movie-trailer.mp4";
+
+import "./Home.css";
+import BehindTheScenes from "../Components/BehindTheScenes";
 
 const Home = () => {
   return (
     <>
       <Header />
-      <section className='heroSection'>
+      <section className="heroSection">
         <MovieSwiper />
       </section>
-      <section className='featured'>
-        <div className='imageContainer'>
-          <img src='' alt='' />
-        </div>
-        <div className='imageContainer'>
-          <img src='' alt='' />
-        </div>
-        <div className='imageContainer'>
-          <img src='' alt='' />
+      <section className="featured">
+          <BehindTheScenes/>
+      </section>
+      <section className="moviePreview">
+        <div className="container">
+          <ReactPlayer url={Video1} volume={0} muted={true} controls={true} />
         </div>
       </section>
-      <section className='moviePreview'>
-        <div className='container'>
-          <ReactPlayer
-            url={Video1}
-            controls={true}
-          />
-        </div>
-      </section>
-      <section className='videos'>
-        <h3>Videos</h3>
-        <div className='container'>
-          <div className='imageContainer'>
-            <img src={Image01} alt='' />
-          </div>
-          <div className='imageContainer'>
-            <img src={Image01} alt='' />
-          </div>
-          <div className='imageContainer'>
-            <img src={Image01} alt='' />
-          </div>
-          <div className='imageContainer'>
-            <img src={Image01} alt='' />
-          </div>
-        </div>
+      <section className="videos">
+        
       </section>
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
