@@ -8,7 +8,7 @@ import useEmblaCarousel from 'embla-carousel-react'
 
 import './Embla.css'
 
-const BehindTheScenes = (props) => {
+const BehindTheScenes = () => {
   const options = { align: 'start' }
 
   // Dynamically import images from the specified folder
@@ -25,7 +25,7 @@ const BehindTheScenes = (props) => {
   } = usePrevNextButtons(emblaApi)
 
   return (
-    <section className="embla">
+    <section className="embla featured">
       <div className="embla__controls">
         <h3>Behind The Scenes</h3>
         <div className="embla__buttons">
