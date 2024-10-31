@@ -3,14 +3,14 @@ header {
     top: 0;
     width: 100%;
     z-index: 999;
+    height: 100px;
     padding-inline: 20px;
-
-    transition: background 0.3s, color 0.3s;
+    transition: background 0.3s, color 0.3s, height 0.3s;
 
     .primaryNavigation {
         max-width: 1140px;
+        height: 100%;
         margin: auto;
-        height: 80px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -192,8 +192,5 @@ header {
 header.scrolled {
     background: #00000070;
     backdrop-filter: blur(15px);
-}
-
-@media screen and (max-width: 768px) {
-    
+    height: 80px;
 }
