@@ -1,0 +1,32 @@
+.movieList.container {
+    width: min(1100px, 100%);
+    padding-inline: 20px;
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+
+    .movie.imageContainer {
+        width: min(320px, 100%);
+        aspect-ratio: 27/40;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+}
+
+
+/* 
+### mysankofa
+preferably six or seven pages
+
+*/

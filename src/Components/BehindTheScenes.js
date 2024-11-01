@@ -13,7 +13,7 @@ const BehindTheScenes = () => {
 
   // Dynamically import images from the specified folder
   const importAll = (r) => r.keys().map(r);
-  const images = importAll(require.context('../images/behind-the-scenes', false, /\.(png|jpe?g|svg)$/));
+  const images = importAll(require.context('../images/mother-in-law-behind-the-scenes', false, /\.(png|jpe?g|svg)$/));
 
   const [emblaRef, emblaApi] = useEmblaCarousel(options)
 

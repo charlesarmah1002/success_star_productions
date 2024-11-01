@@ -19,7 +19,7 @@ export const NewsItems = () => {
         <div className="embla__container">
           <div className="embla__slide newsItem">
             <div className="imageContainer">
-              <img src={ BestIndependentFilmNomination } alt="This is the image" />
+              <img src={ BestIndependentFilmNomination } alt="" />
             </div>
             <div className="content">
               <h4>Mother-In-Law The Movie Gets Nomination</h4>
@@ -28,7 +28,7 @@ export const NewsItems = () => {
           </div>
           <div className="embla__slide newsItem" title='Mother-In-Law Director Nominated for Best Director for Indepedent Film (Africa)'>
             <div className="imageContainer">
-              <img src={ BestIndependentDirectorNomination } alt="This is the image" />
+              <img src={ BestIndependentDirectorNomination } alt="" />
             </div>
             <div className="content">
               <h4>Mother-In-Law Director Nominated for Best Director for Indepedent Film (Africa)</h4>
